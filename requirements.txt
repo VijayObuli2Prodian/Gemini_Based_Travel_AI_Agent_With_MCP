@@ -6,6 +6,6 @@ uvicorn
 google.generativeai
 flask
 flask_cors
-psycopg2
+psycopg2-binary
 threading
 datetime
