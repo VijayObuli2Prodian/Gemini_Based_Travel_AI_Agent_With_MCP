@@ -1,3 +1,4 @@
+google.generativeai
 google-genai
 requests==2.31.0
 fastapi
