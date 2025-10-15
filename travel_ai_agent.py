@@ -17,12 +17,13 @@ FLASK_HOST = "0.0.0.0"  # Listen on all interfaces
 FLASK_PORT = 5001  # Flask server port
 
 # PostgreSQL Database Configuration
+# Read from environment variables with sensible defaults
 DB_CONFIG = {
-    "dbname": "travel_db",  # Database name
-    "user": "mcuser",       # Database user
-    "password": "mcpass",   # Database password
-    "host": "localhost",    # Database host
-    "port": "5432"          # Database port
+    "dbname": os.environ.get("DB_NAME", "travel_db"),
+    "user": os.environ.get("DB_USER", "mcuser"),
+    "password": os.environ.get("DB_PASSWORD", "mcpass"),
+    "host": os.environ.get("DB_HOST", "localhost"),
+    "port": os.environ.get("DB_PORT", "5432")
 }
 
 # --- Database Connection Helper ---
