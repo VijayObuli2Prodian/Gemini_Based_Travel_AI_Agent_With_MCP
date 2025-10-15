@@ -7,5 +7,3 @@ google.generativeai
 flask
 flask_cors
 psycopg2-binary
-threading
-datetime
