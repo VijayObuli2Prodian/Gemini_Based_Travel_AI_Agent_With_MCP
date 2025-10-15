@@ -1,5 +1,11 @@
-google.generativeai
 google-genai
 requests==2.31.0
 fastapi
 uvicorn
+
+google.generativeai
+flask
+flask_cors
+psycopg2
+threading
+datetime
